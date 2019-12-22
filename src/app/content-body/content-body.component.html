@@ -1,0 +1,73 @@
+<!-- Nav Bar -->
+
+<nav>
+    <figure></figure>
+    <ul>
+        <li>Recettes</li>
+        <li>Je prépare</li>
+    </ul>
+    <figure>
+        <img src="/"/>
+        <figcaption>User</figcaption>
+    </figure>
+</nav>
+
+<section>
+    <div class="container">
+        <div class="filtre">
+            <form>
+                <p>
+                    <label for="ingredient"></label>
+                    <input type="text" name="pseudo" id="pseudo" placeholder="Ingrédients" size="30" maxlength="10" />
+                </p>
+                <p>
+                    <label for="nbrpersonne">Nombre de personnes</label>
+                    <select name="nbrpersonne" id="nrbpersonne">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="tmpscuisson">Temps de cuisson</label>
+                    <input type="range" />
+                </p>
+                <p>
+                    <label for="typerepas">Type de repas</label>
+                    <input type="radio" name="repas" value="rapide" id="rapide" /> <label for="rapide">Repas rapide</label>
+                    <input type="radio" name="repas" value="convivial" id="convivial" /> <label for="convivial">Repas convivial</label>
+                    <input type="radio" name="repas" value="chic" id="chic" /> <label for="chic">Repas chic</label>
+                </p>
+
+            </form>
+        </div>
+
+        <div class="content-recette">
+            <div class="item">
+                <div class="recette">
+                    <h3 class="title">Recette 1</h3>
+                    <div class="rating">
+                        <a href="#5" title="Give 5 stars">☆</a>
+                        <a href="#4" title="Give 4 stars">☆</a>
+                        <a href="#3" title="Give 3 stars">☆</a>
+                        <a href="#2" title="Give 2 stars">☆</a>
+                        <a href="#1" title="Give 1 star">☆</a>
+                    </div>
+                </div>
+                <div class="info-recette">
+                    <div>blablabla</div>
+                </div>
+                <div class="photo-recette">
+                    <img src="/">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
