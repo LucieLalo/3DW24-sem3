@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AddRecipeRoutingModule } from './add-recipe-routing.module';
 import { AddRecipeComponent } from './add-recipe.component';
 import { RecipesService } from '../../services/recipes.service';
+//import { ImageService } from '../../services/image.service';
 
 @NgModule({
   declarations: [AddRecipeComponent],
@@ -14,7 +15,8 @@ import { RecipesService } from '../../services/recipes.service';
     AddRecipeRoutingModule
   ],
   providers: [
-    RecipesService
+    RecipesService,
+    //ImageService
   ]
 })
 export class AddRecipeModule { }

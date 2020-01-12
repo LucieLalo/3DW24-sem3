@@ -1,9 +1,29 @@
-<form id="recipeForm" #recipeForm="ngForm" (ngSubmit)="onRecipeSubmitForm(recipeForm);" novalidat>
-    Title:<br>
-    <input type="text" #email="ngModel" name="title" [(ngModel)]="recipeDetail.title"><br>
-    Description:
-    <br>
-    <input type="text" #description="ngModel" name="description" [(ngModel)]="recipeDetail.description"><br>
-    <button type="submit">Save</button>
-    <button type="button" (click)="onClickCancel()">Cancel</button>
-</form>
+
+<section>
+    <div class="container">
+        <h1>Ajouter une recette</h1>
+
+        <form id="recipeForm" #recipeForm="ngForm" (ngSubmit)="onRecipeSubmitForm(recipeForm);" novalidat>
+            <p>
+                <label>Title:</label><br>
+                <input type="text" #email="ngModel" name="title" [(ngModel)]="recipeDetail.title"><br>
+            </p>
+            
+            <p>
+                <label>Description:</label>
+                <br>
+                <textarea rows="5" cols="33" #description="ngModel" name="description" [(ngModel)]="recipeDetail.description"></textarea><br>
+                <!-- <input #imageInput
+                type="file"
+                accept="image/png"
+                (change)="processFile(imageInput)">
+                <br> -->
+            </p>
+            <div>
+                <button type="submit">Save</button>
+                <button type="button" (click)="onClickCancel()">Cancel</button>
+            </div>
+            
+        </form>
+    </div>
+</section>

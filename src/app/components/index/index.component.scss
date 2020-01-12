@@ -121,16 +121,18 @@ section {
                 }
 
                 .recette {
-                    display: flex;
-                    justify-content: space-around;
-                }
+                    position: relative;
 
-                img {
-                    width: 200px;
-                }
+                    img {
+                        width: 200px;
+                        display: block;
+                    }
 
-                .info-recette {
-                    margin: 20px 0;
+                    .rating {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
                 }
             }
         }

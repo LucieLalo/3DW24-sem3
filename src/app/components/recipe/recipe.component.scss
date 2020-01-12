@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
+
+$high: 18px;
+$normal: 16px;
+$medium: 14px;
+
+$black: #000;
+$white: #fff;
+$lightpink: #f9e9ec;
+$pink: #f88dad;
+$yellow: #fac748;
+$blue-violet: #8390fa;
+$blue: #1d2f6f;
+$red: red;
+
+
+section {
+    height: 1000px;
+    margin: 0 auto;
+    background-color: $lightpink;
+    font-family: 'Playfair Display', serif;
+    padding: 50px 10px;
+
+    @media screen and (max-width: 600px) {
+        height: 2000px;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+
+        .detail {
+            position: relative;
+            background: $yellow;
+            padding: 50px 100px;
+
+            p.titre {
+                font-size: $high;
+                color: $white;
+            }
+
+            .rating {
+                position: absolute;
+                top: 50px;
+                right: 50px;
+                color: $white;
+            }
+
+            .description {
+                color: $white;
+                font-size: $normal;
+            }
+
+            button {
+                display: block;
+                width: 150px;
+                height: 40px;
+                background: $red;
+                border-radius: 50px;
+                color: $white;
+                font-size: $medium;
+                margin: 100px auto 0;
+                cursor: pointer;
+            }
+        }
+    }
+}

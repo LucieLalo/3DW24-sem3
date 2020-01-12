@@ -1,6 +1,15 @@
+<section>
+    <div class="container">
+        <div class="detail">   
+            <p class="titre">{{recipeDetail.title}}</p>
+            <p class="rating">{{recipeDetail.rating}}</p>
+            <p class="desc">{{recipeDetail.description}}</p>
 
-<p>{{recipeDetail.title}}</p>
-<p>{{recipeDetail.rating}}</p>
-<p>{{recipeDetail.description}}</p>
+            <button type="button" (click)="onClickRecipeDelete(recipeDetail.id)">Delete</button>
+        </div>
+        
+    
+    </div>
+</section>
 
-<button type="button" (click)="onClickRecipeDelete(recipeDetail.id)">Delete</button>
+
