@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './content-body/content-body.component.html',
-  styleUrls: ['./content-body/content-body.component.scss']
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'game-tracker';
+  title = 'food_app';
 }

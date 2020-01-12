@@ -1,0 +1,39 @@
+<section>
+    <div class="container">
+        <div class="filtre">
+            <form>
+                <p>
+                    <input type="text" name="pseudo" id="pseudo" placeholder="Ingrédients" size="30" maxlength="10" />
+                </p>
+                <p>
+                    <input type="radio" name="repas" value="rapide" id="rapide" /> <label for="rapide">Repas rapide</label>
+                    <input type="radio" name="repas" value="convivial" id="convivial" /> <label for="convivial">Repas convivial</label>
+                    <input type="radio" name="repas" value="chic" id="chic" /> <label for="chic">Repas chic</label>
+                </p>
+
+            </form>
+        </div>
+
+        
+        <div class="content-recette">
+
+        <div class="item" *ngFor="let recipe of recipes">
+            <div class="recette" (click)="openRecipeDetail(recipe.id)">
+                <h3 class="title">{{recipe.title}}</h3>
+                <div class="rating">
+                    <a href="#5" title="Give 5 stars">☆</a>
+                    <a href="#4" title="Give 4 stars">☆</a>
+                    <a href="#3" title="Give 3 stars">☆</a>
+                    <a href="#2" title="Give 2 stars">☆</a>
+                    <a href="#1" title="Give 1 star">☆</a>
+                </div>
+                <div class="photo-recette">
+                    <img src="assets/images/default.png">
+                </div>
+            </div>
+        </div>
+ 
+        </div>
+        
+    </div>
+</section>

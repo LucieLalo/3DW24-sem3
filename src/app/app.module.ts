@@ -1,22 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
+import { AppRouting } from './app-routing';
 import { AppComponent } from './app.component';
-import { ContentBodyComponent } from './content-body/content-body.component';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContentBodyComponent,
-    FooterComponent,
     HeaderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRouting
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,10 +1,8 @@
-//font-size
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
 
 $high: 18px;
 $medium: 14px;
 
-//color
 $black: #000;
 $white: #fff;
 $lightpink: #f9e9ec;
@@ -12,73 +10,6 @@ $pink: #f88dad;
 $yellow: #fac748;
 $blue-violet: #8390fa;
 $blue: #1d2f6f;
-
-
-//Nav-Bar
-
-header {
-    background-color: $blue;
-    color: $white;
-    font-family: 'Playfair Display', serif;
-    nav {
-        position: relative;
-        height: 100px;
-        figure:first-child {
-            img {
-                width: 100px;
-                height: auto;
-                float: left;
-            }
-        }
-
-        ul {
-            position: absolute;
-            left: 200px;
-            top: 20px;
-            @media screen and (max-width: 600px) {
-                left: 120px;
-                top: 10px;
-            }
-
-            li {
-                display: inline;
-                font-size: $high;
-                font-weight: 600;
-
-                @media screen and (max-width: 600px) {
-                    display: block;
-                    list-style: none;
-                }
-
-                a {
-                    text-decoration: none;
-                    color: $white;
-                }
-            }
-
-            li:last-child {
-                margin-left: 70px;
-
-                @media screen and (max-width: 600px) {
-                    margin-left: 0;
-                    margin-top: 10px; 
-                }
-            }
-        }
-
-        figure:last-child {
-            float: right;
-            
-            img {
-                width: 50px;
-            }
-
-            figcaption {
-                text-align: center;
-            }
-        }
-    }
-}
 
 section {
     height: 1000px;
@@ -178,6 +109,7 @@ section {
             height: 200px;
 
             .item {
+                cursor: pointer;
                 background-color: $yellow;
                 color: $white;
                 border: 1px solid $yellow;
@@ -204,25 +136,3 @@ section {
         }
     }
 }
-
-footer {
-    bottom: 0;
-    background-color: $blue;
-    color: $white;
-    padding: 30px 10px;
-
-    div {
-        text-align: center;
-
-    }
-}
-
-
-
-
-
-
-
-
-
-

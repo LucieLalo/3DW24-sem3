@@ -1,0 +1,9 @@
+<form id="recipeForm" #recipeForm="ngForm" (ngSubmit)="onRecipeSubmitForm(recipeForm);" novalidat>
+    Title:<br>
+    <input type="text" #email="ngModel" name="title" [(ngModel)]="recipeDetail.title"><br>
+    Description:
+    <br>
+    <input type="text" #description="ngModel" name="description" [(ngModel)]="recipeDetail.description"><br>
+    <button type="submit">Save</button>
+    <button type="button" (click)="onClickCancel()">Cancel</button>
+</form>
